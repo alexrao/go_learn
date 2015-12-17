@@ -1,0 +1,18 @@
+package main
+
+import "fmt"
+
+func adder() func(int) int {
+	sum := 0
+	return func(x int) int {
+		sum += x
+		return sum
+	}
+}
+
+func main() {
+	pos, neg := adder(), adder()
+	for i := 0; i < 10; i++ {
+		fmt.Printf(" pos[%d]=%d, neg[%d]=%d\n", i, pos(i), -2*i, neg(-2*i))
+	}
+}
