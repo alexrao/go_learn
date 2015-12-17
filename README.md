@@ -2,5 +2,5 @@
 My  Golang learning process.
  -- add by rxp
 
-## Hello World
-the first test of go"Hello world"
+## 示例代码
+学习过程中的各个功能编写的学习代码，供后续回顾
